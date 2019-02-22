@@ -1,6 +1,8 @@
 # gulp-starter
 
 ## Задачи
+* Создание сервера browserSync
+* Liverload
 * Компиляция pug/scss/js
 * Конвертация шрифтов
 * Создание index.html со списком страниц
