@@ -1,5 +1,24 @@
 # gulp-starter
 
+## Структура
+
+```
+├── gulpfile.js             
+├── package.json            
+├── .babelrc                
+├── .eslintrc               
+└── gulp/                   
+    └── tasks/              
+    └── index.js            
+└── src/                    
+    └── components/         
+    └── pages/              
+    └── assets/             
+    └── data.js             
+└── docs/                   
+```
+
+
 ## Задачи
 * Создание сервера browserSync
 * Liverload
@@ -13,6 +32,7 @@
 * Отобразить размер viewport'а при ресайзе
 * Сброка проекта
 * Загрузка на сервер
+
 
 ## Плагины
 * swiper
