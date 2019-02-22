@@ -15,3 +15,4 @@
 * jquery.validate
 * air datepicker
 * gromo scrollbar
+* inputmask
