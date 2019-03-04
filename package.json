@@ -22,6 +22,7 @@
   "homepage": "https://github.com/cherniavsky5/gulp-starter#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-pug": "^4.0.1"
   }
 }
