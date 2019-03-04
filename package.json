@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/cherniavsky5/gulp-starter/issues"
   },
-  "homepage": "https://github.com/cherniavsky5/gulp-starter#readme"
+  "homepage": "https://github.com/cherniavsky5/gulp-starter#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0"
+  }
 }
