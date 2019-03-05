@@ -7,7 +7,7 @@ const fs   = require('fs');
 
 const server = require('../server');
 
-function compilingTemplate() {
+module.exports = () => {
   return gulp.src(config.templates.src)
     .pipe(data(function(file) {
       return JSON.parse(fs.readFileSync(`${config.data.dev}/${config.data.fileName}`))
@@ -16,7 +16,5 @@ function compilingTemplate() {
       pretty: false
     }))
     .pipe(gulp.dest(config.templates.dev))
-    .pipe(server.instance.stream({once: true}));
+    .pipe(server.instance.stream());
 }
-
-module.exports = compilingTemplate;

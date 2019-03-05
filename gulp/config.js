@@ -4,7 +4,15 @@ module.exports = {
   templates: {
     src: 'src/pages/**/*.pug',
     dev: 'dev',
-    dist: 'dist'
+    dist: 'dist',
+    html: 'dev/**/*.html'
+  },
+
+  styles: {
+    src: 'src/assets/scss/**/*.scss',
+    dev: 'dev/css',
+    dist: 'dist/css',
+    outputFileName: 'main.min.css'
   },
 
   data: {
