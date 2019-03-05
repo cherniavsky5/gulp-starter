@@ -1,11 +1,16 @@
+const config = require('../config');
+
 const browserSync = require('browser-sync').create();
 
 function server() {
     browserSync.init({
         server: {
-            baseDir: 'dev'
+            baseDir: config.baseDir
         }
     });
 }
 
-module.exports = server;
+module.exports = {
+  init: server,
+  instance: browserSync
+};
