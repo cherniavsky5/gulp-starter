@@ -1,9 +1,12 @@
+const gulp = require('gulp');
 const pug = require('gulp-pug');
 
-module.exports = () => {
-  return gulp.src('/src/**/*.pug')
+function compilationPug() {
+  return gulp.src('src/pages/**/*.pug')
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('/dev'));
-};
+    .pipe(gulp.dest('dev'));
+}
+
+module.exports = compilationPug;
