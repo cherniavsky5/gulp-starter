@@ -1,5 +1,10 @@
 module.exports = {
   baseDir: 'dev',
+  distDir: 'dist',
+
+  index: {
+    data: 'src/index.json'
+  },
 
   templates: {
     src: 'src/pages/**/*.pug',
@@ -13,6 +18,11 @@ module.exports = {
     dev: 'dev/css',
     dist: 'dist/css',
     outputFileName: 'main.min.css'
+  },
+
+  fonts: {
+    src: 'src/assets/fonts/**/*',
+    dev: 'dev/fonts'
   },
 
   data: {
