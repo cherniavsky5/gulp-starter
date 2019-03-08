@@ -4,7 +4,7 @@ const gulp  = require('gulp');
 const path  = require('path');
 const merge = require('gulp-merge-json');
 
-function dataJSON() {
+module.exports = () => {
   return gulp.src(config.data.src)
     .pipe(merge({
       fileName: config.data.fileName,
@@ -21,6 +21,4 @@ function dataJSON() {
       }
     }))
     .pipe(gulp.dest(config.data.dev));
-}
-
-module.exports = dataJSON;
+};
